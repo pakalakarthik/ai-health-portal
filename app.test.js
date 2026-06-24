@@ -10,7 +10,7 @@ test("GET / should return message", async () => {
 test("GET /health should return UP", async () => {
   const response = await request(app).get("/health");
   expect(response.statusCode).toBe(200);
-  expect(response.body.status).toBe("UPA");
+  expect(response.body.status).toBe("UP");
 });
 
 test("GET /version should return version", async () => {
